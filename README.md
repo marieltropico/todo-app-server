@@ -30,23 +30,17 @@ A secure and scalable RESTful API for managing todos with user authentication, b
 
 1. Clone the repository and install dependencies:
 ```bash
-git clone https://github.com/your-repo/todo-api-server.git
-cd server
+git clone git@github.com:marieltropico/todo-app-server.git
 npm install
 ```
 
-2. Create `.env` file in root directory:
+2. Start production server:
 ```bash
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/todo-app
-SESSION_SECRET=your-secret-key
-```
-3. Start development server:
-```bash
-npm run dev
+npm run build
+npm start
 ```
 
-4. Run tests:
+3. Run tests:
 ```bash
 npm test
 ```
@@ -72,18 +66,6 @@ npm test
 - POST /todos: Create a new todo for authenticated user
 - PUT /todos/:id: Update a todo for authenticated user
 - DELETE /todos/:id: Delete a todo for authenticated user
-
-
-## Project Structure
-src/
-├── config/ # Database configuration
-├── middleware/ # Express middlewares
-├── models/ # Mongoose models
-├── routes/ # Route handlers
-├── tests/ # Test files
-├── types/ # TypeScript interfaces
-└── index.ts # Entry point
-
 
 ## Testing
 
