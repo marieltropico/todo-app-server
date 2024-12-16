@@ -26,6 +26,19 @@ A secure and scalable RESTful API for managing todos with user authentication, b
 - MongoDB (v4.4+)
 - TypeScript (v4.5+)
 
+## Environment Variables
+Note: For ease of review, the .env file has been included in the repository. In a production environment, you should:
+
+- Remove .env from version control
+- Add it to .gitignore
+- Create a .env.example file with:
+```bash
+PORT=5001
+MONGO_URI=mongodb://localhost:27017/todo-app
+SESSION_SECRET=your-secret-key
+NODE_ENV=production
+```
+
 ## Project Setup
 
 1. Clone the repository and install dependencies:
